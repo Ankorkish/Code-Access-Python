@@ -1,0 +1,7 @@
+imie = input("Podaj swoje imię: ")
+print(f"Cześć, {imie}!")
+print(imie[0])
+print(imie[1])
+print(imie[2])
+print(imie[3])
+print(imie[4])

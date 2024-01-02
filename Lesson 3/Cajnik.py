@@ -1,6 +1,5 @@
-roz =  list(map(int, input().split()))
-sumUzGn = 1
-for i in roz:
-    sumUzGn += i
-    sumUzGn -= 1
-print(sumUzGn)
+def powitanie(imie="Gościu"):
+    print("Witaj, " + imie + "!")
+
+powitanie("Anna")  # Wynik: Witaj, Anna!
+powitanie()        # Wynik: Witaj, Gościu!

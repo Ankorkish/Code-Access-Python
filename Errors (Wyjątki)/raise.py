@@ -1,5 +1,5 @@
 try:
-    kwota = 3999
+    kwota = 1999
     if kwota < 2999:
         raise ValueError("proszę dodać pieniądze do swojego konta")
     else:

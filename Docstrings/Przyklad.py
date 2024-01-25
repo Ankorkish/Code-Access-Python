@@ -8,17 +8,13 @@ def pomnoz_liczby(a, b):
 
     Returns:
         int: Iloczyn dwóch liczb.
-
-    Raises:
-        ValueError: Jeśli jedna z liczb jest ujemna.
-
-    Examples:
-        >>> pomnoz_liczby(3, 4)
-        12
     """
     if a < 0 or b < 0:
         raise ValueError("Jedna z liczb jest ujemna.")
     return a * b
 
-pomnoz_liczby(12, 12)
-print()
+help(pomnoz_liczby)
+
+
+pomnoz_liczby(2, 3)
+

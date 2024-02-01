@@ -1,22 +1,13 @@
-from tkinter import *
-from tkinter import ttk
-from tkinter.messagebox import showinfo
+def formatuj_tekst(tekst, duze_litery=False, odwrotnie=False):
+    if duze_litery == True:
+        tekst = tekst.upper()
+    if odwrotnie == True:
+        tekst = tekst[::-1]
 
-root = Tk()
-root.geometry("250x200")
+    return tekst
 
-enabled = IntVar()
 
-enabled_checkbutton = ttk.Checkbutton(text="Włącz", variable=enabled)
-enabled_checkbutton.pack(padx=6, pady=6, anchor=NW)
-
-enabled_label = ttk.Label(textvariable=enabled)
-enabled_label.pack(padx=6, pady=6, anchor=NW)
-
-enabled_label2 = ttk.Label(textvariable=enabled)
-enabled_label2.pack(padx=6, pady=6, anchor=NW)
-
-enabled_label1 = ttk.Label(textvariable=enabled)
-enabled_label1.pack(padx=6, pady=6, anchor=NW)
-
-root.mainloop()
+print(formatuj_tekst("Witaj Świecie"))
+print(formatuj_tekst("Witaj Świecie", duze_litery=True))
+print(formatuj_tekst("Witaj Świecie", odwrotnie=True))
+print(formatuj_tekst("Witaj Świecie", duze_litery=True, odwrotnie=True))
